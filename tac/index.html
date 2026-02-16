@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TAC Hospitality Consultancy — Transforming Hotels Into High-Performing Businesses</title>
+  <meta name="description" content="TAC Hospitality Consultancy delivers hands-on hotel consulting across revenue management, operations, profitability, training, and guest experience.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏨</text></svg>">
+</head>
+<body class="loading">
+  <div class="loader" id="loader">
+    <div class="loader__logo"><span>TAC</span></div>
+    <div class="loader__bar"><div class="loader__bar-fill"></div></div>
+  </div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-main"><span>TAC</span></span>
+        <span class="nav__logo-sub">Hospitality Consultancy</span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="btn btn-primary nav__cta">Get Started</a></li>
+      </ul>
+      <div class="nav__hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+  <div class="sticky-cta" id="stickyCta">
+    <a href="contact.html" class="btn btn-primary">Book a Strategy Call</a>
+  </div>
+  <section class="hero" id="hero">
+    <canvas class="hero__canvas" id="heroCanvas"></canvas>
+    <div class="hero__bg">
+      <div class="hero__bg-gradient"></div>
+      <div class="hero__bg-pattern"></div>
+    </div>
+    <div class="hero__orb hero__orb--1"></div>
+    <div class="hero__orb hero__orb--2"></div>
+    <div class="hero__orb hero__orb--3"></div>
+    <div class="hero__content">
+      <div class="hero__label">
+        <div class="hero__label-dot"></div>
+        <span class="hero__label-text">India's Trusted Hospitality Partner</span>
+      </div>
+      <h1 class="hero__title">
+        <span class="line"><span class="line-inner">We Don't Just Advise.</span></span>
+        <span class="line"><span class="line-inner">We Transform Hotels.</span></span>
+      </h1>
+      <p class="hero__tagline">
+        <span>Revenue. Operations. Profit. Guest Experience.</span>
+      </p>
+      <p class="hero__subtitle">From independent boutique stays to branded chains — TAC delivers hands-on hospitality consulting that drives measurable results, not just recommendations.</p>
+      <div class="hero__ctas">
+        <div class="magnetic-wrap">
+          <a href="contact.html" class="btn btn-primary">Book a Strategy Call</a>
+        </div>
+        <div class="magnetic-wrap">
+          <a href="services.html" class="btn btn-secondary">Explore Services</a>
+        </div>
+      </div>
+      <div class="hero__metrics">
+        <div class="metric-card">
+          <div class="metric-card__icon"><svg viewBox="0 0 24 24"><path d="M3 21h18M3 10h18M3 7l9-4 9 4M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3"/></svg></div>
+          <div class="metric-card__value" data-count="100" data-suffix="+">0</div>
+          <div class="metric-card__label">Hotels Partnered</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-card__icon"><svg viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+          <div class="metric-card__value" data-count="30" data-suffix="%+">0</div>
+          <div class="metric-card__label">Avg. Revenue Lift</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-card__icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+          <div class="metric-card__value" data-count="4500" data-suffix="+">0</div>
+          <div class="metric-card__label">Professionals Trained</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-card__icon"><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg></div>
+          <div class="metric-card__value" data-count="15" data-suffix="%+">0</div>
+          <div class="metric-card__label">Avg. GOP Boost</div>
+        </div>
+      </div>
+      <div class="hero__scroll-cue"><span>Scroll</span><div class="hero__scroll-line"></div></div>
+    </div>
+  </section>
+  <section class="about-intro section-padding" id="about">
+    <div class="container">
+      <div class="about-intro__grid">
+        <div class="about-intro__text reveal">
+          <span class="label">Who We Are</span>
+          <h2 class="heading-lg">Hotel Operators Turned Consultants</h2>
+          <p class="body-lg">At TAC Hospitality, we specialize in end-to-end hotel consulting solutions designed to improve operational performance, boost revenues, achieve stronger GOP results, and elevate service standards.</p>
+          <p class="body-lg">With deep expertise in hotel management, revenue strategy, training, finance, and guest experience, we help hospitality businesses achieve measurable success.</p>
+          <a href="about.html" class="btn btn-outline">Our Story</a>
+        </div>
+        <div class="about-intro__image-wrap reveal-right">
+          <div class="about-intro__visual">
+            <div class="about-intro__visual-abstract">
+              <div class="deco-ring deco-ring--1"></div>
+              <div class="deco-ring deco-ring--2"></div>
+              <div class="deco-ring deco-ring--3"></div>
+              <div class="about-intro__stat-card">
+                <div class="about-intro__stat-value" data-count="100" data-suffix="+">0</div>
+                <div class="about-intro__stat-label">Hotels Transformed</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="focus-areas section-padding" id="services">
+    <div class="container">
+      <div class="focus-areas__header reveal">
+        <span class="label">What We Do</span>
+        <h2 class="heading-lg">Eight Pillars of Hotel Transformation</h2>
+        <p class="body-lg">Every hotel has untapped potential. Our eight specialized consulting domains ensure no opportunity goes undiscovered.</p>
+      </div>
+      <div class="focus-areas__grid stagger-children">
+        <a href="services.html" class="focus-card reveal" style="--i:0">
+          <div class="focus-card__icon"><svg viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+          <h3>Revenue Management</h3>
+          <p>Dynamic pricing, channel optimization, demand forecasting, and yield management strategies.</p>
+          <div class="focus-card__overlay"><span>Explore &rarr;</span></div>
+        </a>
+        <a href="services.html" class="focus-card reveal" style="--i:1">
+          <div class="focus-card__icon"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+          <h3>GOP &amp; Profitability</h3>
+          <p>P&amp;L restructuring, cost optimization, procurement audits, and margin improvement.</p>
+          <div class="focus-card__overlay"><span>Explore &rarr;</span></div>
+        </a>
+        <a href="services.html" class="focus-card reveal" style="--i:2">
+          <div class="focus-card__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 01-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg></div>
+          <h3>Operations Excellence</h3>
+          <p>Workflow redesign, quality control, department coordination, and performance tracking.</p>
+          <div class="focus-card__overlay"><span>Explore &rarr;</span></div>
+        </a>
+        <a href="services.html" class="focus-card reveal" style="--i:3">
+          <div class="focus-card__icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg></div>
+          <h3>Training &amp; Development</h3>
+          <p>Custom programs from frontline to leadership — skill building, service culture, and team empowerment.</p>
+          <div class="focus-card__overlay"><span>Explore &rarr;</span></div>
+        </a>
+        <a href="services.html" class="focus-card reveal" style="--i:4">
+          <div class="focus-card__icon"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></div>
+          <h3>Guest Experience</h3>
+          <p>Journey mapping, touchpoint optimization, review management, and loyalty programs.</p>
+          <div class="focus-card__overlay"><span>Explore &rarr;</span></div>
+        </a>
+        <a href="services.html" class="focus-card reveal" style="--i:5">
+          <div class="focus-card__icon"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+          <h3>Systems &amp; Technology</h3>
+          <p>PMS optimization, channel manager setup, RMS configuration, and staff training on tools.</p>
+          <div class="focus-card__overlay"><span>Explore &rarr;</span></div>
+        </a>
+        <a href="services.html" class="focus-card reveal" style="--i:6">
+          <div class="focus-card__icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg></div>
+          <h3>SOP Development</h3>
+          <p>Department-wise SOPs built from real operations — not copied templates.</p>
+          <div class="focus-card__overlay"><span>Explore &rarr;</span></div>
+        </a>
+        <a href="services.html" class="focus-card reveal" style="--i:7">
+          <div class="focus-card__icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg></div>
+          <h3>Marketing &amp; Positioning</h3>
+          <p>Brand strategy, digital presence, OTA optimization, and market differentiation.</p>
+          <div class="focus-card__overlay"><span>Explore &rarr;</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="process section-padding">
+    <div class="container">
+      <div class="focus-areas__header reveal">
+        <span class="label">How We Work</span>
+        <h2 class="heading-lg">From Diagnosis to Transformation</h2>
+        <p class="body-lg">A proven four-phase approach that turns insights into measurable outcomes.</p>
+      </div>
+      <div class="process__timeline">
+        <div class="process__step active reveal" style="--i:0">
+          <div class="process__step-marker"><span>01</span></div>
+          <div class="process__step-content">
+            <h3>Understand</h3>
+            <p>Deep-dive property audit, stakeholder interviews, data analysis, and competitive assessment.</p>
+            <div class="process__step-detail"><p>We spend the first phase listening and observing — walking the floors, reviewing financials, talking to staff at every level, and understanding the market context.</p></div>
+          </div>
+        </div>
+        <div class="process__step reveal" style="--i:1">
+          <div class="process__step-marker"><span>02</span></div>
+          <div class="process__step-content">
+            <h3>Build</h3>
+            <p>Custom strategy development, SOP creation, system setup, and team training plans.</p>
+            <div class="process__step-detail"><p>Based on insights from the discovery phase, we build tailored strategies, operational frameworks, and implementation roadmaps specific to your property.</p></div>
+          </div>
+        </div>
+        <div class="process__step reveal" style="--i:2">
+          <div class="process__step-marker"><span>03</span></div>
+          <div class="process__step-content">
+            <h3>Execute</h3>
+            <p>Hands-on implementation, on-site coaching, system integration, and team capability building.</p>
+            <div class="process__step-detail"><p>This is where TAC is fundamentally different. We work on-site, shoulder-to-shoulder with your team, implementing every change and training as we go.</p></div>
+          </div>
+        </div>
+        <div class="process__step reveal" style="--i:3">
+          <div class="process__step-marker"><span>04</span></div>
+          <div class="process__step-content">
+            <h3>Deliver</h3>
+            <p>KPI tracking, performance review, sustainability framework, and handover.</p>
+            <div class="process__step-detail"><p>We track results rigorously against defined KPIs, make final adjustments, and ensure your team can maintain standards independently.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="who-we-work section-padding">
+    <div class="container">
+      <div class="focus-areas__header reveal">
+        <span class="label">Partnered With</span>
+        <h2 class="heading-lg">Every Hotel Has Unique Challenges.<br>We Solve All of Them.</h2>
+      </div>
+      <div class="who-we-work__tabs" id="whoTabs">
+        <button class="who-we-work__tab active" data-tab="independent">Independent Hotels</button>
+        <button class="who-we-work__tab" data-tab="boutique">Boutique Properties</button>
+        <button class="who-we-work__tab" data-tab="resorts">Resorts &amp; Leisure</button>
+        <button class="who-we-work__tab" data-tab="business">Business Hotels</button>
+        <button class="who-we-work__tab" data-tab="new-openings">New Openings</button>
+        <button class="who-we-work__tab" data-tab="turnaround">Turnaround Projects</button>
+      </div>
+      <div class="who-we-work__content" id="whoContent"></div>
+    </div>
+  </section>
+  <section class="why-tac section-padding">
+    <div class="container">
+      <div class="why-tac__grid">
+        <div class="why-tac__text reveal">
+          <span class="label">Why TAC</span>
+          <h2 class="heading-lg">What Makes Us Different</h2>
+          <ul class="why-tac__list">
+            <li><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg><span><strong>Operators, Not Theorists</strong> — Every consultant has managed hotels firsthand.</span></li>
+            <li><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg><span><strong>On-Site, Not Remote</strong> — We work on your property, not from a distant office.</span></li>
+            <li><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg><span><strong>Custom, Not Generic</strong> — No recycled playbooks. Every strategy is built from scratch.</span></li>
+            <li><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg><span><strong>KPI-Driven, Not Fluffy</strong> — Clear metrics defined upfront. We are accountable.</span></li>
+            <li><svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg><span><strong>Sustainable, Not Dependent</strong> — We build your team capability, not dependency.</span></li>
+          </ul>
+        </div>
+        <div class="why-tac__visual reveal-right">
+          <div class="why-tac__quote-card">
+            <blockquote>"TAC didn't just give us a report — they rolled up their sleeves and transformed how we operate. Revenue is up 32%, and more importantly, our team is empowered."</blockquote>
+            <cite>— General Manager, 120-Key Independent Hotel</cite>
+          </div>
+          <div class="why-tac__value-cards">
+            <div class="why-tac__value-card"><div class="why-tac__value-number" data-count="60" data-suffix="+">0</div><span>Cities Covered</span></div>
+            <div class="why-tac__value-card"><div class="why-tac__value-number" data-count="15" data-suffix="+">0</div><span>Years Experience</span></div>
+            <div class="why-tac__value-card"><div class="why-tac__value-number" data-count="92" data-suffix="%">0</div><span>Client Retention</span></div>
+            <div class="why-tac__value-card"><div class="why-tac__value-number" data-count="30" data-suffix="+">0</div><span>Consultants</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cta-band">
+    <div class="container">
+      <h2 class="heading-md reveal">Your Hotel Deserves Better Results.<br>Let's Make It Happen.</h2>
+      <p class="body-md reveal">Book a free, no-obligation strategy discussion with our senior consulting team.</p>
+      <div class="magnetic-wrap reveal"><a href="contact.html" class="btn btn-primary">Book Your Free Consultation</a></div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="nav__logo">
+            <span class="nav__logo-main"><span>TAC</span></span>
+            <span class="nav__logo-sub">Hospitality Consultancy</span>
+          </div>
+          <p class="footer__tagline">Transforming hotels into high-performing businesses through hands-on consulting, strategic revenue management, and operational excellence.</p>
+          <div class="footer__contact-items">
+            <a href="mailto:info@tac-hospitality.com" class="footer__contact-item">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+              info@tac-hospitality.com
+            </a>
+            <a href="tel:+919884089990" class="footer__contact-item">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              +91 98840 89990
+            </a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="about.html">About TAC</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="services.html">Revenue Management</a></li>
+            <li><a href="services.html">GOP Optimization</a></li>
+            <li><a href="services.html">Operations Excellence</a></li>
+            <li><a href="services.html">Training Programs</a></li>
+            <li><a href="services.html">Guest Experience</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2024 TAC Hospitality Consultancy. All rights reserved.</span>
+        <span>Designed with precision for hospitality excellence.</span>
+      </div>
+    </div>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

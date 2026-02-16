@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — TAC Hospitality Consultancy</title>
+  <meta name="description" content="Get in touch with TAC Hospitality Consultancy. Let's discuss how we can transform your hotel's performance.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏨</text></svg>">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navigation -->
+  <nav class="nav scrolled" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-main"><span>TAC</span></span>
+        <span class="nav__logo-sub">Hospitality Consultancy</span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.html" class="btn btn-primary nav__cta">Get Started</a></li>
+      </ul>
+      <div class="nav__hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero__pattern"></div>
+    <div class="container">
+      <span class="label">Contact Us</span>
+      <h1 class="heading-xl">Let's Build Something<br>Remarkable Together</h1>
+      <p class="body-lg">Every great hotel transformation starts with a single conversation. Tell us about your property — we'll show you the possibilities.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact section-padding">
+    <div class="container">
+      <div class="contact__grid">
+
+        <!-- Contact Form -->
+        <div class="contact__form-wrap reveal">
+          <h2 class="heading-sm">Tell Us About Your Property</h2>
+          <p class="body-md" style="margin-bottom: var(--space-lg);">Fill out the form and our consulting team will get back to you within 24 hours with initial observations and a proposed approach.</p>
+          <form id="contactForm" class="contact__form">
+            <div class="form-row form-row--two">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+            <div class="form-row form-row--two">
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 98840 89990" required>
+              </div>
+              <div class="form-group">
+                <label for="designation">Designation</label>
+                <input type="text" id="designation" name="designation" placeholder="e.g. General Manager">
+              </div>
+            </div>
+            <div class="form-row form-row--two">
+              <div class="form-group">
+                <label for="property-type">Property Type</label>
+                <select id="property-type" name="property-type">
+                  <option value="" disabled selected>Select property type</option>
+                  <option value="independent">Independent / Owner-Managed</option>
+                  <option value="boutique">Boutique Hotel</option>
+                  <option value="resort">Resort / Leisure Property</option>
+                  <option value="business">Business Hotel</option>
+                  <option value="new-opening">New Opening / Pre-Opening</option>
+                  <option value="chain">Chain / Franchise</option>
+                  <option value="heritage">Heritage Property</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="city">City / Location</label>
+                <input type="text" id="city" name="city" placeholder="e.g. Chennai, India">
+              </div>
+            </div>
+            <div class="form-row form-row--two">
+              <div class="form-group">
+                <label for="rooms">Number of Rooms</label>
+                <input type="number" id="rooms" name="rooms" placeholder="e.g. 120" min="1">
+              </div>
+              <div class="form-group">
+                <label for="timeline">When Do You Need Help?</label>
+                <select id="timeline" name="timeline">
+                  <option value="" disabled selected>Select timeline</option>
+                  <option value="immediately">Immediately</option>
+                  <option value="1-month">Within 1 Month</option>
+                  <option value="3-months">Within 3 Months</option>
+                  <option value="exploring">Just Exploring Options</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="challenge">Biggest Challenge Right Now</label>
+              <select id="challenge" name="challenge">
+                <option value="" disabled selected>What's your primary concern?</option>
+                <option value="revenue">Revenue / Pricing / Occupancy</option>
+                <option value="profitability">Profitability / Cost Control</option>
+                <option value="operations">Operations / Service Quality</option>
+                <option value="training">Staff Training / Retention</option>
+                <option value="guest-experience">Guest Experience / Reviews</option>
+                <option value="technology">Technology / Systems</option>
+                <option value="pre-opening">Pre-Opening Setup</option>
+                <option value="turnaround">Full Property Turnaround</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell Us More</label>
+              <textarea id="message" name="message" rows="5" placeholder="Describe your hotel's situation, challenges, or what you're hoping to achieve..."></textarea>
+            </div>
+            <div class="magnetic-wrap">
+              <button type="submit" class="btn btn-primary btn-full">
+                <span>Send Your Enquiry</span>
+                <svg viewBox="0 0 24 24" width="18" height="18" style="margin-left: 8px;"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Contact Info Sidebar -->
+        <div class="contact__info reveal-right">
+          <div class="contact__info-block">
+            <h3 class="heading-sm">Get In Touch</h3>
+            <div class="contact__info-items">
+              <div class="contact__info-item">
+                <div class="contact__info-icon">
+                  <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+                </div>
+                <div>
+                  <span class="contact__info-label">Email</span>
+                  <a href="mailto:info@tac-hospitality.com">info@tac-hospitality.com</a>
+                </div>
+              </div>
+              <div class="contact__info-item">
+                <div class="contact__info-icon">
+                  <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                </div>
+                <div>
+                  <span class="contact__info-label">Phone</span>
+                  <a href="tel:+919884089990">+91 98840 89990</a>
+                </div>
+              </div>
+              <div class="contact__info-item">
+                <div class="contact__info-icon">
+                  <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <span class="contact__info-label">Location</span>
+                  <span>Chennai, India</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__promise">
+            <h4>What Happens Next?</h4>
+            <ol class="contact__promise-list">
+              <li>
+                <span class="contact__promise-num">01</span>
+                <div>
+                  <strong>Discovery Call</strong>
+                  <p>We schedule a 30-minute call to understand your property, challenges, and goals.</p>
+                </div>
+              </li>
+              <li>
+                <span class="contact__promise-num">02</span>
+                <div>
+                  <strong>Initial Assessment</strong>
+                  <p>Our team provides preliminary observations and a proposed consulting approach.</p>
+                </div>
+              </li>
+              <li>
+                <span class="contact__promise-num">03</span>
+                <div>
+                  <strong>Tailored Proposal</strong>
+                  <p>You receive a detailed proposal with clear scope, timeline, and expected outcomes.</p>
+                </div>
+              </li>
+              <li>
+                <span class="contact__promise-num">04</span>
+                <div>
+                  <strong>Engagement Begins</strong>
+                  <p>We get to work — hands-on, in-hotel, with measurable KPIs from day one.</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Band -->
+  <section class="cta-band">
+    <div class="container">
+      <h2 class="heading-md reveal">Prefer to Talk Directly?</h2>
+      <p class="body-md reveal">Call us at <a href="tel:+919884089990" style="color: var(--gold-light); text-decoration: underline;">+91 98840 89990</a> — we're always happy to have a no-obligation conversation about your property.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="nav__logo">
+            <span class="nav__logo-main"><span>TAC</span></span>
+            <span class="nav__logo-sub">Hospitality Consultancy</span>
+          </div>
+          <p class="footer__tagline">Transforming hotels into high-performing businesses through hands-on consulting, strategic revenue management, and operational excellence.</p>
+          <div class="footer__contact-items">
+            <a href="mailto:info@tac-hospitality.com" class="footer__contact-item">
+              <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+              info@tac-hospitality.com
+            </a>
+            <a href="tel:+919884089990" class="footer__contact-item">
+              <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              +91 98840 89990
+            </a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="about.html">About TAC</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Services</h4>
+          <ul class="footer__links">
+            <li><a href="services.html">Revenue Management</a></li>
+            <li><a href="services.html">GOP Optimization</a></li>
+            <li><a href="services.html">Operations Excellence</a></li>
+            <li><a href="services.html">Training Programs</a></li>
+            <li><a href="services.html">Guest Experience</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2024 TAC Hospitality Consultancy. All rights reserved.</span>
+        <span>Designed with precision for hospitality excellence.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
