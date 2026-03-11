@@ -1,0 +1,8 @@
+[build]
+  command = "npm install && npm run build"
+  publish = "out"
+
+[build.environment]
+  # Next.js 16 requires Node >= 20.9.0 — use a 20.x runtime on Netlify
+  NODE_VERSION = "20.9.0"
+
