@@ -93,7 +93,7 @@ export default function HeroSection() {
                         </RippleButton>
                     </Link>
 
-                    <Link href="/showcase">
+                    <Link href="/events">
                         <button className="group relative px-8 py-4 rounded-full overflow-hidden bg-white/5 backdrop-blur-md border border-white/20 transition-all hover:bg-white/10 hover:border-white/40 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)]">
                             <span className="relative z-10 font-[family-name:var(--font-orbitron)] font-bold text-white tracking-wider flex items-center gap-2">
                                 EXPLORE EVENTS
